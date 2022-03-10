@@ -1,0 +1,229 @@
+#container{
+    width: 100%;
+    height: auto; 
+    display: flex; 
+    flex-direction: column;
+}
+#heading{
+    width: 100%;
+    height: 80px;
+    background-color: rgb(77, 103, 187);
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+   
+}
+#container>div:first-child{
+        font-size: 20px;
+        letter-spacing: 2px;
+        color: white;
+}
+#items{
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+}
+#item1{
+    width: 32%;
+    height: 100%;
+    box-shadow: 3px 3px 3px 3px gray;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #d9d9d9;
+}
+#item2{
+    width: 32%;
+    height: 100%;
+    box-shadow: 3px 3px 3px 3px gray;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #d9d9d9;
+}
+#item3{
+    width: 32%;
+    height: 100%;
+    box-shadow: 3px 3px 3px 3px gray;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #d9d9d9;
+}
+img{
+    width:50%; 
+    height:250px;
+}
+#content{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    height: 70px;
+   
+}
+#content>button{
+    margin-left: auto;
+    margin-right: 10px;
+    height: 30px;
+    width: 100px;
+    margin-top: 14px;
+    background: #0066ff;
+    border: none;
+    color: white;
+    border: 1px solid white;
+    margin-left: 5px;
+}
+#content>p{
+    margin-left: 10px;
+    margin-top: 20px;
+}
+#myCart{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(57, 131, 226);
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    display: none;
+    text-align: center;
+}
+#myCart> h1{
+    color: aliceblue;
+    letter-spacing: 2px;
+    margin-top: 40px;
+}
+.product-container{
+    margin-top: 20px;
+    width: 100%;
+    height: 290px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    border: 1px solid;
+    box-shadow: 5px 5px 5px 5px #a6a6a6;
+    background: #4d4dff
+    
+}
+#left{
+    width: 40%;
+    height: 100%;
+    background: #d9d9d9;
+    display: flex;
+    flex-direction: column;
+}
+#left_img{
+    width: 70%;
+    height: 200px;
+    margin: auto;
+}
+#left-footer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    color: #404040;
+    justify-content: center;
+    text-align: center;
+}
+.quant{
+    margin-bottom: 20px;
+    width: 50%;
+    margin: auto;
+}
+#right{
+    width: 35%;
+    margin: auto;
+    text-align: center;
+    flex-direction: column;
+}
+#right > h2{
+    color: white;
+}
+#right>h3{
+    color: antiquewhite;
+}
+#right>h1{
+    color: #ffff33;
+
+}
+#right>button{
+    margin-bottom: 40px;
+    width: 100px;
+    height: 35px;
+    border: 1px white;
+    background: #ffff33;
+    color: blue;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 8px;
+}
+#add{
+    width: 80%;
+    height: auto;
+    margin: auto;
+}
+.sp{
+    margin-left: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 35px;
+    color: rgb(57, 131, 226);
+}
+#number{
+    margin-top: 15px;
+}
+#totalPrice{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(77, 103, 187);
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+   visibility: hidden;
+}
+#btn-div{
+    width: 80%;
+    height: 100%;
+    display: flex;
+}
+#total-price{
+    width: 20%;
+    height: 100%;
+    background-color: pink;
+    display: flex;
+    
+}
+#p-button{
+    width: 130px;
+    height: 50px;
+    margin-left: auto;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+#sum-price{
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media screen and (max-width : 900px){
+    #items{
+       
+        flex-direction: column;
+    }
+    #item1, #item2, #item3{
+        width: 80%;
+    }
+}
+@media screen and (max-width : 700px){
+     .product-container{
+        height: 400px;
+     }
+}

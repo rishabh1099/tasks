@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<button id="btn">Add</button>
+<button id="btn1">Remove</button>
+<ul>
+</ul>
+<script>
+	counter = 0;
+	var b = document.querySelectorAll('button');
+	b[0].addEventListener('click', function (){
+
+		var n = ["apple", "mango", "guava"];
+		if(counter < n.length){
+		document.getElementsByTagName('ul')[0].innerHTML += "<li>"+n[counter]+"</li>";
+		counter++;
+	  }
+	});
+	b[1].onclick = function (){
+		var a = document.getElementsByTagName('li');
+		    i = a.length-1;
+		    a[i].remove();
+		    counter--;
+	};
+	function myfun(){
+
+		var n = ["apple", "mango", "guava"];
+		if(counter < n.length){
+		document.getElementsByTagName('ul')[0].innerHTML += "<li>"+n[counter]+"</li>";
+		counter++;
+	  }
+	}
+	remover = counter;
+	// function re(){
+	// 	var a = document.getElementsByTagName('li');
+	// 	    i = a.length-1;
+	// 	    a[i].remove();
+	// 	    counter--;
+	// }
+</script>
+</body>
+</html>

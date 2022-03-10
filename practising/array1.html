@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // var a = [11, 14, 9, 13, 20, 22];
+        // for(i=0; i<a.length; i++){
+        //     if(a[0]<a[i]){
+        //         a[0] = a[i];
+        //     }
+        // }
+        // document.write(a[0]);
+
+        var friends = [
+            {
+                "name": "Rishabh",
+                "age": "20",
+                "is_friend": "true",
+                "fav_color": ["red", "Blue", "Black", "Pink", "Yellow"],
+                "color_check": function () {
+                    for (i = 0; i < this.fav_color.length;) {
+                        if (this.fav_color[i] == "Yellow") {
+                            return "Yellow is my fav_color";
+                            console.log("Yellow is my fav_color");
+                            break;
+                        } else {
+                            i++;
+                        }
+                    }
+                    if (i == this.fav_color.length)
+                        return "Yellow is not my fav_color";
+                }
+            },
+            {
+                "name": "Aman",
+                "age": "20",
+                "is_friend": "true",
+                "fav_color": ["red", "Blue", "Black", "Yellow"],
+                "color_check": function () {
+                    for (i = 0; i < this.fav_color.length;) {
+                        if (this.fav_color[i] == "Yellow") {
+                            return "Yellow is my fav_color";
+                            break;
+                        } else {
+                            i++;
+                        }
+                    }
+                    if (i == this.fav_color.length)
+                        return "Yellow is not my fav_color";
+                }
+            },
+            {
+                "name": "ankit",
+                "age": "20",
+                "is_friend": "true",
+                "fav_color": ["red", "Blue", "Black", "Yellow", "Pink"],
+                "color_check": function () {
+                    for (i = 0; i < this.fav_color.length;) {
+                        if (this.fav_color[i] == "Yellow") {
+                            return "Yellow is my fav_color";
+                            break;
+                        } else {
+                            i++;
+                        }
+                    }
+                    if (i == this.fav_color.length)
+                        return "Yellow is not my fav_color";
+                }
+            }
+        ];
+        var z = [];
+        for (i in friends) {
+
+            p = friends[i].fav_color.length;
+            z.push(p);
+        }
+        var maxnum = Math.max(...z);
+
+        var html = "<table width='100%' border='1px'>";
+        html += `<tr>`;
+        html += `<th> ${'S No.'} </th>`;
+        html += `<th> ${'Name'} </th>`;
+        html += `<th> ${'Age'} </th>`;
+        html += `<th> ${'Is BestFriend.'} </th>`;
+
+        for (z = 0; z < maxnum; z++) {
+            html += `<th>${'Favourite Color '} ${z + 1}</th>`;
+        }
+        html += `<th> ${'Yellow Favourite'} </th>`;
+        html += `</tr>`;
+        html += "</table>";
+
+
+document.write(html);
+
+    </script>
+</body>
+
+</html>

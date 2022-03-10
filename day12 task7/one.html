@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="one.css">
+    <title>Form</title>
+</head>
+
+<body>
+    <div id="container">
+        <h1>Form</h1>
+        <form onsubmit="return myfun()">
+            <div class="sub_content">
+                <div class="formm">
+                    <label for="name"> Name :</label><br>
+                    <input type="text" id="name" class="input" >
+                    <span id="ename"></span>
+                    </div>
+                <div class="formm">
+                    <label for="age"> Age :</label><br>
+                    <input type="number" id="age" class="input">
+                    <span id="eage"></span>
+                </div>
+                <div class="formm">
+                    <label for="email"> Email :</label><br>
+                    <input type="email" id="email" class="input">
+                    <span id="eemail"></span>
+                </div>
+                <div class="formm">
+                    <label for="phone-number"> Number :</label><br>
+                    <input type="number" id="number" class="input">
+                    <span id="enumber"></span>
+                </div>
+                <div class="formm">
+                    <label for="city"> City :</label><br>
+                    <select>
+                        <option>Lucknow</option>
+                        <option>Delhi</option>
+                        <option>Noida</option>
+                        <option>Hydrabad</option>
+                    </select>
+                   
+                </div>
+                <div id="hobby-div">
+                    <label for="hobbies"> Hobbies :</label>
+                    <div class="sub-hobby">
+                        <input type="checkbox" class="check" id="music" value="Music">
+                        <label>Music</label>
+                        <input type="checkbox" class="check" id="games" value="Games">
+                        <label>Games</label>
+                        <input type="checkbox" class="check" id="games" value="Novel">
+                        <label>novels</label>
+                        <span id="ehobby"></span>
+                    </div>
+               
+                </div>
+                <div class="formm">
+                    <button type="submit" id="btn">Submit</button>
+                </div><br>
+            </div>
+        </form><br><br>
+    </div>
+    <script src="one.js"></script>
+</body>
+
+</html>

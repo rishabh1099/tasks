@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		#container{
+			display: flex;
+			width: 100%;
+			height: 700px;
+			
+			flex-direction: column;
+		}
+		.img{
+			width: 20%;
+			height: 200px;
+			background-color: yellow;
+			display: flex;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		#sub{
+			height: 300px;
+			
+			width: 100%;
+			display: flex;
+		}
+		.sub_div1{
+			width: 30%;
+			height: 100%;
+			margin-right: auto;
+			background-color: red;
+		}
+		.sub_div2{
+			width: 30%;
+			height: 100%;
+			margin-left: auto;
+			background-color: red;
+		}
+		#table{
+			width: 100%;
+			height: 200px;
+			
+			display: flex;
+		}
+		#ttt{
+			margin-right: auto;
+			margin-left: auto;
+		}
+		@media screen and (max-width: 700px){
+			#sub{
+			height: 300px;
+			flex-direction: column;
+			width: 100%;
+			display: flex;
+		}
+		.sub_div1{
+			width: 80%;
+			height: 100%;
+			margin-right: auto;
+			margin-left: auto;
+			flex-direction: column;
+			background-color: red;
+		}
+		.sub_div2{
+			width: 80%;
+			height: 100%;
+			margin-left: auto;
+				margin-right:auto;
+			flex-direction: column;
+			background-color: red;
+		}
+			.img{
+			width: 80%;
+			height: 200px;
+			background-color: yellow;
+			display: flex;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		}
+	</style>
+</head>
+<body>
+<div id="container">
+	<div class="img">
+		
+	</div>
+	<div id="sub">
+		<div class="sub_div1"></div>
+		<div class="sub_div2"></div>
+	</div>
+	<div id="table">
+		<table  id="ttt"  border="1px" width="300px">
+			<tr>
+				<th>Hello</th>
+				<th>Hello</th>
+			</tr>
+		</table>
+	</div>
+</div>
+</body>
+</html>
